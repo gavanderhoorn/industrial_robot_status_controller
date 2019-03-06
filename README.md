@@ -12,7 +12,23 @@ These packages provide a `ros_control` compatible controller that publishes "rob
 Note: the controller does not implement any logic to *derive* the values of the fields in `RobotStatus`, it merely transforms `IndustrialRobotStatusHandle` into a `RobotStatus` message. The `hardware_interface` is responsible for implementing the correct logic to populate the fields based on information about the status of the robot controller that it interfaces with.
 
 
-## Usage
+## Installation
+
+In a Catkin workspace (example uses [catkin_tools](https://github.com/catkin/catkin_tools), but `catkin_make` should also work):
+
+```bash
+$ git -C /path/to/catkin_ws/src clone https://github.com/gavanderhoorn/industrial_robot_status_controller.git
+$ cd /path/to/catkin_ws
+$ rosdep update
+$ rosdep install --from-paths cd /path/to/catkin_ws/src -i
+$ catkin build
+$ source devel/setup.bash
+```
+
+At this point the controller can be used with any `ros_control`-based stack. See the *Example* section below for an example controller configuration.
+
+
+## Usage/Integration
 
 ### Interface
 
@@ -36,6 +52,7 @@ See the *Example* section below for a full configuration example of the controll
 
 ## Example
 
+This section shows how to integrate the interface into a `hardware_interface` and how to add a stanza to a `ros_control` configuration file to load the controller.
 
 ### Interface
 
