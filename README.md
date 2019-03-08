@@ -90,14 +90,14 @@ using industrial_robot_status_interface::RobotMode;
 using fanuc::stream_motion::bit_on;
 
 // set defaults
-robot_status.in_motion       = TriState::UNKNOWN;
+robot_status_resource_.in_motion       = TriState::UNKNOWN;
 // skip other fields for brevity
-robot_status.mode            = RobotMode::UNKNOWN;
-robot_status.error_code      = 0;
+robot_status_resource_.mode            = RobotMode::UNKNOWN;
+robot_status_resource_.error_code      = 0;
 
 // use controller info to set real values
 if (latest_robot_data_.state == MyRobot::IS_MOVING)
-  robot_status.in_motion = TriState::TRUE;
+  robot_status_resource_.in_motion = TriState::TRUE;
 
 ...
 
