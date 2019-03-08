@@ -96,6 +96,9 @@ robot_status_resource_.mode            = RobotMode::UNKNOWN;
 robot_status_resource_.error_code      = 0;
 
 // use controller info to set real values
+// note: 'latest_robot_data_' is some variable that contains
+//       the latest state received from whatever this hw interface
+//       is communicating with.
 if (latest_robot_data_.state == MyRobot::IS_MOVING)
   robot_status_resource_.in_motion = TriState::TRUE;
 
