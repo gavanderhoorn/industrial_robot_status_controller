@@ -20,7 +20,7 @@ In a Catkin workspace (example uses [catkin_tools](https://github.com/catkin/cat
 $ git -C /path/to/catkin_ws/src clone https://github.com/gavanderhoorn/industrial_robot_status_controller.git
 $ cd /path/to/catkin_ws
 $ rosdep update
-$ rosdep install --from-paths cd /path/to/catkin_ws/src -i
+$ rosdep install --from-paths /path/to/catkin_ws/src -i
 $ catkin build
 $ source devel/setup.bash
 ```
