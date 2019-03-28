@@ -14,7 +14,29 @@ Note: the controller does not implement any logic to *derive* the values of the 
 
 ## Installation
 
-In a Catkin workspace (example uses [catkin_tools](https://github.com/catkin/catkin_tools), but `catkin_make` should also work):
+### Binaries
+
+These packages have been released through the ROS buildfarm. Only ROS Kinetic is supported on Ubuntu Xenial (`i386`, `amd64`, `armhf` and `arm64`).
+
+The following command may be used to install the controller on a supported platform:
+
+```bash
+sudo apt-get install ros-kinetic-industrial-robot-status-controller
+```
+
+Note: `industrial_robot_status_interface` is only needed when integrating the interface into a `hardware_interface`.
+
+### From source
+
+This should only be needed in case:
+
+ 1. there is no release available for a particular platform
+ 1. the current release does not include a certain feature or fix available in the source repository
+ 1. changes to the packages are needed
+
+In other cases a binary installation is preferred.
+
+To build the packages, the following commands may be used in a Catkin workspace (example uses [catkin_tools](https://github.com/catkin/catkin_tools), but `catkin_make` should also work):
 
 ```bash
 $ git -C /path/to/catkin_ws/src clone https://github.com/gavanderhoorn/industrial_robot_status_controller.git
