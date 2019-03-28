@@ -27,6 +27,8 @@ sudo apt-get install ros-kinetic-industrial-robot-status-controller
 
 Note: `industrial_robot_status_interface` is only needed when integrating the interface into a `hardware_interface`.
 
+You can now continue with configuring your `ros_control` controller stack. See the [Example - Controller](#controller-1) section below for an example controller configuration.
+
 ### From source
 
 This should only be needed in case:
@@ -48,7 +50,7 @@ $ catkin build
 $ source devel/setup.bash
 ```
 
-At this point the controller can be used with any `ros_control`-based stack. See the *Example* section below for an example controller configuration.
+At this point the controller can be used with any `ros_control`-based stack. See the [Example - Controller](#controller-1) section below for an example controller configuration.
 
 
 ## Usage/Integration
