@@ -16,17 +16,9 @@ find_package(catkin REQUIRED
     realtime_tools
 )
 
-catkin_package(
-  LIBRARIES
-    ${PROJECT_NAME}
-  CATKIN_DEPENDS
-    controller_interface
-    hardware_interface
-    industrial_msgs
-    industrial_robot_status_interface
-    pluginlib
-    realtime_tools
-)
+# this is empty as this pkg provides a plugin. Users are not expected
+# to link the library against a binary directly.
+catkin_package()
 
 include_directories(
   include
