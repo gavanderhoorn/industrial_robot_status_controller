@@ -112,7 +112,6 @@ Finally: update the members of `robot_status_resource_` with data from the contr
 // somewhere in RobotHW::read(..)
 using industrial_robot_status_interface::TriState;
 using industrial_robot_status_interface::RobotMode;
-using fanuc::stream_motion::bit_on;
 
 // set defaults
 robot_status_resource_.in_motion       = TriState::UNKNOWN;
