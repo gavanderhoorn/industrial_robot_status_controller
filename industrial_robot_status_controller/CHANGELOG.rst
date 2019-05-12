@@ -2,8 +2,8 @@
 Changelog for package industrial_robot_status_controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.2 (2019-05-12)
+------------------
 * Fix potential build ordering problem with industrial_msgs pkg. (`#4 <https://github.com/gavanderhoorn/industrial_robot_status_controller/issues/4>`_)
 * Contributors: Bianca Homberg
 

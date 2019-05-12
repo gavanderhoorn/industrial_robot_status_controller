@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
   <name>industrial_robot_status_controller</name>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <description>A ros_control controller that reports robot status using the ROS-Industrial RobotStatus message.</description>
   <author>G.A. vd. Hoorn (TU Delft Robotics Institute)</author>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
