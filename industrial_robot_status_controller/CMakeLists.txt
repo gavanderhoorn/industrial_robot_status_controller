@@ -25,6 +25,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS})
 
 add_library(${PROJECT_NAME} src/controller.cpp)
+add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
 
 install(
