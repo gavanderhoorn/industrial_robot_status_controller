@@ -2,6 +2,9 @@
 Changelog for package industrial_robot_status_interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.1 (2019-04-05)
 ------------------
 
