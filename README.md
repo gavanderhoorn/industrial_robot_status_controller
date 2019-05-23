@@ -42,10 +42,11 @@ In other cases a binary installation is preferred.
 To build the packages, the following commands may be used in a Catkin workspace (example uses [catkin_tools](https://github.com/catkin/catkin_tools), but `catkin_make` should also work):
 
 ```bash
+# this assumes there is a Catkin workspace at '/path/to/catkin_ws' and it contains a 'src' sub directory
 $ git -C /path/to/catkin_ws/src clone https://github.com/gavanderhoorn/industrial_robot_status_controller.git
-$ cd /path/to/catkin_ws
 $ rosdep update
 $ rosdep install --from-paths /path/to/catkin_ws/src -i
+$ cd /path/to/catkin_ws
 $ catkin build
 $ source devel/setup.bash
 ```
