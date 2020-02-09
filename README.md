@@ -1,6 +1,10 @@
 # industrial_robot_status_controller
 
-[![ROS build Status](http://build.ros.org/job/Kdev__industrial_robot_status_controller__ubuntu_xenial_amd64/badge/icon)](http://build.ros.org/view/Kdev/job/Kdev__industrial_robot_status_controller__ubuntu_xenial_amd64/)
+[![Build Status: Travis CI](https://travis-ci.com/gavanderhoorn/industrial_robot_status_controller.svg?branch=master)](https://travis-ci.com/gavanderhoorn/industrial_robot_status_controller)
+[![ROS build Status - Kinetic](http://build.ros.org/job/Kdev__industrial_robot_status_controller__ubuntu_xenial_amd64/badge/icon)](http://build.ros.org/view/Kdev/job/Kdev__industrial_robot_status_controller__ubuntu_xenial_amd64/)
+[![ROS build Status - Melodic](http://build.ros.org/job/Mdev__industrial_robot_status_controller__ubuntu_bionic_amd64/badge/icon)](http://build.ros.org/view/Mdev/job/Mdev__industrial_robot_status_controller__ubuntu_bionic_amd64/)
+[![Github Issues](https://img.shields.io/github/issues/gavanderhoorn/industrial_robot_status_controller.svg)](http://github.com/gavanderhoorn/industrial_robot_status_controller/issues)
+
 [![license - apache 2.0](https://img.shields.io/:license-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
@@ -17,13 +21,15 @@ Note: the controller does not implement any logic to *derive* the values of the 
 
 ### Binaries
 
-These packages have been released through the ROS buildfarm. Only ROS Kinetic is supported on Ubuntu Xenial (`i386`, `amd64`, `armhf` and `arm64`).
+These packages have been released through the ROS buildfarm. Only ROS Kinetic and Melodic are supported on Ubuntu Xenial and Bionic (`i386`, `amd64`, `armhf` and `arm64`).
 
 The following command may be used to install the controller on a supported platform:
 
 ```bash
 sudo apt-get install ros-kinetic-industrial-robot-status-controller
 ```
+
+Replace `kinetic` with `melodic` when installing on ROS Melodic.
 
 Note: `industrial_robot_status_interface` is only needed when integrating the interface into a `hardware_interface`.
 
