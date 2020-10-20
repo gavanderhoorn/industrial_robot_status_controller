@@ -14,12 +14,7 @@ env:
     - CCACHE_DIR=$HOME/.ccache
     - ROS_REPO=ros
   matrix:
-    - ROS_DISTRO="noetic"
-    - ROS_DISTRO="noetic" ROS_REPO=ros-shadow-fixed UPSTREAM_WORKSPACE='github:simonschmeisser/industrial_core@noetic-compat'
-
-matrix:
-  allow_failures:
-    - env: ROS_DISTRO="noetic" ROS_REPO=ros-shadow-fixed
+    - ROS_DISTRO="noetic" UPSTREAM_WORKSPACE='github:simonschmeisser/industrial_core@noetic-compat'
 
 install:
   - git clone --quiet --depth=1 https://github.com/ros-industrial/industrial_ci.git .ci_config
