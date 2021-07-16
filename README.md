@@ -1,7 +1,6 @@
 # industrial_robot_status_controller
 
 [![Build Status: Travis CI](https://travis-ci.com/gavanderhoorn/industrial_robot_status_controller.svg?branch=master)](https://travis-ci.com/gavanderhoorn/industrial_robot_status_controller)
-[![ROS build Status - Kinetic](http://build.ros.org/job/Kdev__industrial_robot_status_controller__ubuntu_xenial_amd64/badge/icon)](http://build.ros.org/view/Kdev/job/Kdev__industrial_robot_status_controller__ubuntu_xenial_amd64/)
 [![ROS build Status - Melodic](http://build.ros.org/job/Mdev__industrial_robot_status_controller__ubuntu_bionic_amd64/badge/icon)](http://build.ros.org/view/Mdev/job/Mdev__industrial_robot_status_controller__ubuntu_bionic_amd64/)
 [![ROS build Status - Noetic](http://build.ros.org/job/Ndev__industrial_robot_status_controller__ubuntu_focal_amd64/badge/icon)](http://build.ros.org/view/Ndev/job/Ndev__industrial_robot_status_controller__ubuntu_focal_amd64/)
 [![Github Issues](https://img.shields.io/github/issues/gavanderhoorn/industrial_robot_status_controller.svg)](http://github.com/gavanderhoorn/industrial_robot_status_controller/issues)
