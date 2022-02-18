@@ -1,11 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 project(industrial_robot_status_controller)
 
-if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 14)
-  set(CMAKE_CXX_STANDARD_REQUIRED ON)
-endif()
-
 find_package(catkin REQUIRED
   COMPONENTS
     controller_interface
